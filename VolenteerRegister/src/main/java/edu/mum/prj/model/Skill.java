@@ -10,6 +10,8 @@ public class Skill {
 	private int skill_id;
 	
 	private String detail_skill;
+	
+	public Skill() {};
 	public int getSkill_id() {
 		return skill_id;
 	}

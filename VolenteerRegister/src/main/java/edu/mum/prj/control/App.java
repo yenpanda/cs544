@@ -26,10 +26,12 @@ public class App {
 			
 			 fillDatabase(session);
 			
-			 //Find by location
+			 //Find by requirement of professor
 			 
-		 System.out.println("ujmujmujmujmumjumj"+Queries.searchByKeywordAndLocation(session, "registerSys", "MUM"));
-			 
+			 System.out.println(Queries.searchByKeywordAndLocation(session, "registerSys", "MUM"));
+			 System.out.println(Queries.listTaskByProject(session, "Hibernate RegisterSys"));
+			 System.out.println(Queries.listProjectByStatus(session, "Closed"));
+			 System.out.println(Queries.searchProjectByParticularResource(session, "Volunteer"));
 			 
 		 } catch (Exception e1) {
 				// TODO Auto-generated catch block

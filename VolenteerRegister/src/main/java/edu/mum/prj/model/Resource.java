@@ -24,6 +24,7 @@ public class Resource {
 //	@ManyToMany(mappedBy = "res")
 //	private List<Task> task;
 	
+	public Resource() {};
 	public Resource(Role type, String provider) {
 		super();
 		this.type = type;

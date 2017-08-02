@@ -9,6 +9,7 @@ import javax.persistence.*;
 
 @Entity
 public class Task {
+	
 	@Id
 	@GeneratedValue
 	private int task_id;
@@ -35,8 +36,8 @@ public class Task {
 
 	private static DateFormat df = DateFormat.getDateInstance(DateFormat.SHORT,
 			Locale.US);
-	
 
+	public Task() {};
 	public Task(String status, String skill, String startDate, String endDate) {
 		super();
 		this.status = status;
@@ -104,6 +105,12 @@ public class Task {
 		catch(Exception e) {
 			e.printStackTrace();
 		}
+	}
+
+	@Override
+	public String toString() {
+		return "Task [task_id=" + task_id + ", res=" + res + ", status=" + status + ", skill=" + skill + ", startDate="
+				+ startDate + ", endDate=" + endDate + "]";
 	}
 	
 	

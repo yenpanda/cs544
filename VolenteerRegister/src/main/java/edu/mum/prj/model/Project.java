@@ -10,7 +10,7 @@ import javax.persistence.*;
 
 @Entity
 public class Project {
-
+    public Project(){}
 	@Id
 	@GeneratedValue
 	
